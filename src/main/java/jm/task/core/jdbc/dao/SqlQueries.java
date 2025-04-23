@@ -15,7 +15,7 @@ public class SqlQueries {
                 )
                 """;
 
-    public static final String dropUsersTable = "DROP TABLE users";
+    public static final String dropUsersTable = "DROP TABLE IF EXISTS users";
 
     public static final String saveUser = "INSERT INTO users (name, lastName, age) values (?, ?, ?) RETURNING id";
 
